@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel Decorative', cursive;
+  color: #B0C4DE;
+}
+
+body{
+
+background-image: url(wall.jpg);
+
+  font-size: 22px;
+}
+
+img{
+ width: 700px;
+ height: 400px;
+
+}
+
+p {
+ 
+  border-width: 7px;
+  border-color: darkblue;
+}
+
+
+/* NAVBAR */
+.nav{
+  background-color: gray;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* HERO IMAGE */
+
+.hero-image{
+  background: url("./fundal.jpg") center center fixed;
+  height: 90vh;
+}
+
+.hero-text{
+  color: black;
+  text-align: center;
+  position: relative;
+  font-size: 250%;
+  text-transform: uppercase;
+  /* width: 100px; */
+  height: 100px;
+  position: relative;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  -webkit-animation-timing-function: linear; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+  animation-timing-function: linear; 
+
+}
+
+
+/* JUMBOTROn */
+
+.jumbotron{
+  position: relative;
+  height: 40vh;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top:15px;
+  color:	#191970 ;
+}
+
+/* left image right text */
+
+.image-text{
+  color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left-image right-text";
+
+}
+
+.image-text > .left-image > img{
+  color: aliceblue;
+  align-self: stretch;
+  object-fit: cover;
+grid-area: left-image;
+}
+.right-text{
+  color: cornflowerblue;
+  grid-area: right-text;
+  text-align: center;
+  margin-top:25px;
+}
+
+/*  Right image and left text */
+.text-image{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left-text right-image";
+}
+
+.right-image > img{
+  align-self: stretch;
+  object-fit: cover;
+  grid-area: right-image;
+  
+}
+
+.left-text{
+  color: cornflowerblue;
+  grid-area: left-text;
+  text-align: center;
+  margin-top:25px;
+  
+}
+
+/* footer */
+
+footer{
+  background-color: #36486b ;
+  height: 10vh;
+  color: black;
+  text-align: center;
+  font-size: 100%;
+  padding: 25px 10px;
+}
